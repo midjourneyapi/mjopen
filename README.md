@@ -5,7 +5,7 @@
 💡**声明**
 - 此项目只发布于 GitHub，基于 MIT 协议，免费且作为开源学习使用。并且不会有任何形式的卖号、付费服务、讨论群、讨论组等行为。谨防受骗。
 - 本开源是在 [ChenZhaoYu](https://github.com/Chanzhaoyu/chatgpt-web) 基础上做二次开发 ；使用 [midjourney-proxy](https://github.com/novicezk/midjourney-proxy) 、 Suno-API、[Luma-API](https://github.com/LumaAI-API/Luma-API)  作为后端API而形成的；
-- 可以直接用 https://vercel.ddaiai.com 先体验
+- 可以直接用 https://chat.aiyiapi.com 先体验
 
 ![cover](./docs/mj2a1.jpg)
 ## 支持功能 
@@ -44,7 +44,7 @@
 ## 无服务器-个人桌面安装
 > - [x] 请到 https://github.com/Dooy/chatgpt-web-midjourney-proxy/releases 下载最新版本安装(选择合适你操作系统的版本)
 > - [x] 选择一个合适的中转服务商( 最好都支持 `gpt`  `gpts` `midjourney` `claude`  `suno` `luma` `runway` `viggle` `flux` `ideogram` `kling` `pika`)
-> - [x] 中转服务商推荐 https://www.openai-hk.com 一个`key`和`api接口地址` 同时支持 [gpt](https://www.openai-hk.com/docs/getting-started.html) [gpts](https://www.openai-hk.com/docs/openai/gpts.html) [midjourney](https://www.openai-hk.com/docs/midjourney/guide.html) [claude](https://www.openai-hk.com/docs/lab/claude-3.html) [suno](https://www.openai-hk.com/docs/lab/suno-v3.html) [luma](https://www.openai-hk.com/docs/lab/luma-video.html) [runway](https://www.openai-hk.com/docs/lab/runway-video.html) [viggle](https://www.openai-hk.com/docs/lab/viggle-dance.html) [ideogram](https://www.openai-hk.com/docs/lab/ideogram.html) [flux](https://www.openai-hk.com/docs/lab/flux.html) [kling](https://www.openai-hk.com/docs/lab/kling.html) [pika](https://www.openai-hk.com/docs/lab/pika-video.html) [udio](https://www.openai-hk.com/docs/lab/udio-music.html)，mj-fast最低能到0.12rmb/张,`suno` 最低能到4分一首 
+> - [x] 中转服务商推荐 https://chat.aiyiapi.com 一个`key`和`api接口地址` 同时支持 [gpt](https://www.openai-hk.com/docs/getting-started.html) [gpts](https://www.openai-hk.com/docs/openai/gpts.html) [midjourney](https://www.openai-hk.com/docs/midjourney/guide.html) [claude](https://www.openai-hk.com/docs/lab/claude-3.html) [suno](https://www.openai-hk.com/docs/lab/suno-v3.html) [luma](https://www.openai-hk.com/docs/lab/luma-video.html) [runway](https://www.openai-hk.com/docs/lab/runway-video.html) [viggle](https://www.openai-hk.com/docs/lab/viggle-dance.html) [ideogram](https://www.openai-hk.com/docs/lab/ideogram.html) [flux](https://www.openai-hk.com/docs/lab/flux.html) [kling](https://www.openai-hk.com/docs/lab/kling.html) [pika](https://www.openai-hk.com/docs/lab/pika-video.html) [udio](https://www.openai-hk.com/docs/lab/udio-music.html)，
 ![多模态](./docs/suno-ds.jpg)
 
 ## Vercel 一键部署
@@ -123,7 +123,7 @@ curl -X POST -H "Content-Type: multipart/form-data" -F "file=@/path/to/file" htt
 返回格式
 ```json
 {
-"url":"https://xxxxxxx.jpg"
+  "url": "https://xxxxxxx.jpg"
 }
 ```
 
