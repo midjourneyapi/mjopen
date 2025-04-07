@@ -29,23 +29,23 @@
 - [X] Prise en charge du téléchargement d'images pour gpt-4-vision-preview avec chatgpt
 - [X] Prise en charge du téléchargement de fichiers en backend pour les modèles gpt-4-all, gpt-4-gizmo-xxx (désactivé par défaut, activation par variable d'environnement API_UPLOADER=1)
 - [X] Prise en charge des modèles inversés gpt-4-all, gpt-4-v, gpt-4-gizmo-(gizmo_id) avec chatgpt
-- [X] Prise en charge du changement de modèle par lien hypertexte https://vercel.ddaiai.com/#/m/gpt-4-all https://vercel.ddaiai.com/#/m/gpt-4-gizmo-g-2fkFE8rbu
-- [X] Prise en charge du changement de modèle par lien hypertexte pour ChatGPT https://chat.openai.com/g/g-2fkFE8rbu modifié en https://vercel.ddaiai.com/#/g/g-2fkFE8rbu
+- [X] Prise en charge du changement de modèle par lien hypertexte https://chat.aiyiapi.com/#/m/gpt-4-all https://chat.aiyiapi.com/#/m/gpt-4-gizmo-g-2fkFE8rbu
+- [X] Prise en charge du changement de modèle par lien hypertexte pour ChatGPT https://chat.openai.com/g/g-2fkFE8rbu modifié en https://chat.aiyiapi.com/#/g/g-2fkFE8rbu
 - [X] Prise en charge des modèles multi-modaux GPTs avec chatgpt
 - [X] Prise en charge de tts whisper avec chatgpt
 - [X] Reconnaissance vocale instantanée (ASR intégré au navigateur) à partir de la version `v2.15.7`
-- [X] Prise en charge de la modification des paramètres par lien hypertexte, adapté pour les déploiements `one-api` et `new-api` de chat https://vercel.ddaiai.com/#/s/t?OPENAI_API_BASE_URL=https://abc.com&OPENAI_API_KEY=sk-xxxxx&MJ_SERVER=https://abc.com&MJ_API_SECRET=sk-xxx&UPLOADER_URL=
-- [X] Prise en charge des déploiements de chat `one-api` et `new-api` https://vercel.ddaiai.com/#/?settings={%22key%22:%22sk-abc%22,%22url%22:%22https://www.abc.com%22} `(v.2.14.3)`
+- [X] Prise en charge de la modification des paramètres par lien hypertexte, adapté pour les déploiements `one-api` et `new-api` de chat https://chat.aiyiapi.com/#/s/t?OPENAI_API_BASE_URL=https://abc.com&OPENAI_API_KEY=sk-xxxxx&MJ_SERVER=https://abc.com&MJ_API_SECRET=sk-xxx&UPLOADER_URL=
+- [X] Prise en charge des déploiements de chat `one-api` et `new-api` https://chat.aiyiapi.com/#/?settings={%22key%22:%22sk-abc%22,%22url%22:%22https://www.abc.com%22} `(v.2.14.3)`
 
 ## Installation sur ordinateur personnel sans serveur
-> - [x] Téléchargez la dernière version sur https://github.com/Dooy/chatgpt-web-midjourney-proxy/releases (choisissez la version adaptée à votre système d'exploitation)
+> - [x] Téléchargez la dernière version sur https://github.com/midjourneyapi/mjopen/releases (choisissez la version adaptée à votre système d'exploitation)
 > - [x] Choisissez un service de relais approprié (de préférence supportant `gpt`, `gpts`, `midjourney`, `claude`, `suno`)
 > - [x] Service de relais recommandé https://www.openai-hk.com, un `key` et une `adresse d'interface API` supportant simultanément `gpt`, `midjourney`, `claude`, `suno`, avec un coût minimum de 0,12 RMB par image pour mj-fast
 ![multi-modale](./docs/suno-ds.jpg)
 
 ## Déploiement en un clic sur Vercel
 
-[![Déployer avec Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Dooy/chatgpt-web-midjourney-proxy&env=OPENAI_API_BASE_URL&env=OPENAI_API_KEY&env=MJ_SERVER&env=MJ_API_SECRET&project-name=chatgpt-web-midjourney-proxy&repository-name=chatgpt-web-midjourney-proxy)
+[![Déployer avec Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/midjourneyapi/mjopen&env=OPENAI_API_BASE_URL&env=OPENAI_API_KEY&env=MJ_SERVER&env=MJ_API_SECRET&project-name=chatgpt-web-midjourney-proxy&repository-name=chatgpt-web-midjourney-proxy)
 
 ## Variables d'environnement (env)
 

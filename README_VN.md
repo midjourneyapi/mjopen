@@ -28,23 +28,23 @@
 - [X] Chatgpt hỗ trợ tải ảnh để sử dụng GPT-4-Vision-Preview
 - [X] Chatgpt hỗ trợ tải lên file backend (dành cho các mô hình GPT-4-All, GPT-4-Gizmo-XXX)! Mặc định là tắt, mở cần biến môi trường API_UPLOADER=1
 - [X] Chatgpt hỗ trợ mô hình đảo ngược GPT-4-All, GPT-4-V, GPT-4-Gizmo-(gizmo_id)
-- [X] Chatgpt hỗ trợ chuyển đổi mô hình liên kết https://vercel.ddaiai.com/#/m/gpt-4-all https://vercel.ddaiai.com/#/m/gpt-4-gizmo-g-2fkFE8rbu
-- [X] Hỗ trợ chuyển đổi mô hình liên kết thử nghiệm của ChatGPT https://chat.openai.com/g/g-2fkFE8rbu sửa thành https://vercel.ddaiai.com/#/g/g-2fkFE8rbu
+- [X] Chatgpt hỗ trợ chuyển đổi mô hình liên kết https://chat.aiyiapi.com/#/m/gpt-4-all https://chat.aiyiapi.com/#/m/gpt-4-gizmo-g-2fkFE8rbu
+- [X] Hỗ trợ chuyển đổi mô hình liên kết thử nghiệm của ChatGPT https://chat.openai.com/g/g-2fkFE8rbu sửa thành https://chat.aiyiapi.com/#/g/g-2fkFE8rbu
 - [X] Chatgpt hỗ trợ GPTs đa modal
 - [X] Chatgpt hỗ trợ tts whisper
 - [X] Nhận diện giọng nói ngay lập tức (Nhận diện giọng nói sẵn có của trình duyệt ASR) `v2.15.7` trở lên
-- [X] Hỗ trợ thay đổi thiết lập liên kết, phù hợp với `one-api`, `new-api` triển khai chat https://vercel.ddaiai.com/#/s/t?OPENAI_API_BASE_URL=https://abc.com&OPENAI_API_KEY=sk-xxxxx&MJ_SERVER=https://abc.com&MJ_API_SECRET=sk-xxx&UPLOADER_URL=
-- [X] Hỗ trợ triển khai chat `one-api`, `new-api` https://vercel.ddaiai.com/#/?settings={%22key%22:%22sk-abc%22,%22url%22:%22https://www.abc.com%22} `(v.2.14.3)`
+- [X] Hỗ trợ thay đổi thiết lập liên kết, phù hợp với `one-api`, `new-api` triển khai chat https://chat.aiyiapi.com/#/s/t?OPENAI_API_BASE_URL=https://abc.com&OPENAI_API_KEY=sk-xxxxx&MJ_SERVER=https://abc.com&MJ_API_SECRET=sk-xxx&UPLOADER_URL=
+- [X] Hỗ trợ triển khai chat `one-api`, `new-api` https://chat.aiyiapi.com/#/?settings={%22key%22:%22sk-abc%22,%22url%22:%22https://www.abc.com%22} `(v.2.14.3)`
 
 ## Cài đặt trên máy cá nhân - không máy chủ
-> - [x] Vui lòng tải phiên bản mới nhất từ https://github.com/Dooy/chatgpt-web-midjourney-proxy/releases (chọn phiên bản phù hợp với hệ điều hành của bạn)
+> - [x] Vui lòng tải phiên bản mới nhất từ https://github.com/midjourneyapi/mjopen/releases (chọn phiên bản phù hợp với hệ điều hành của bạn)
 > - [x] Chọn một nhà cung cấp dịch vụ trung chuyển phù hợp (Tốt nhất là hỗ trợ `gpt`, `gpts`, `midjourney`, `claude`, `suno`)
 > - [x] Nhà cung cấp dịch vụ trung chuyển đề xuất https://www.openai-hk.com với một `key` và `địa chỉ API` hỗ trợ cùng lúc `gpt`, `midjourney`, `claude`, `suno`, mj-fast thấp nhất chỉ 0.12rmb/hình ảnh
 ![đa modal](./docs/suno-ds.jpg)
 
 ## Vercel triển khai một lần nhấn
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Dooy/chatgpt-web-midjourney-proxy&env=OPENAI_API_BASE_URL&env=OPENAI_API_KEY&env=MJ_SERVER&env=MJ_API_SECRET&project-name=chatgpt-web-midjourney-proxy&repository-name=chatgpt-web-midjourney-proxy)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/midjourneyapi/mjopen&env=OPENAI_API_BASE_URL&env=OPENAI_API_KEY&env=MJ_SERVER&env=MJ_API_SECRET&project-name=chatgpt-web-midjourney-proxy&repository-name=chatgpt-web-midjourney-proxy)
 
 ## Biến môi trường env
 
@@ -114,7 +114,7 @@ curl -X POST -H "Content-Type: multipart/form-data" -F "file=@/path/to/file" htt
 Kết quả trả về
 ```json
 {
-"url":"https://xxxxxxx.jpg"
+  "url": "https://xxxxxxx.jpg"
 }
 ```
 

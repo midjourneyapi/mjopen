@@ -28,23 +28,23 @@
 - [X] Поддержка загрузки изображений для gpt-4-vision-preview
 - [X] Поддержка загрузки файлов на backend (для моделей gpt-4-all, gpt-4-gizmo-xxx). По умолчанию отключено, для включения требуется переменная окружения API_UPLOADER=1
 - [X] Поддержка обратных моделей gpt-4-all, gpt-4-v, gpt-4-gizmo-(gizmo_id)
-- [X] Поддержка переключения гиперссылок на модели https://vercel.ddaiai.com/#/m/gpt-4-all, https://vercel.ddaiai.com/#/m/gpt-4-gizmo-g-2fkFE8rbu
-- [X] Поддержка переключения гиперссылок на модели ChatGPT https://chat.openai.com/g/g-2fkFE8rbu на https://vercel.ddaiai.com/#/g/g-2fkFE8rbu
+- [X] Поддержка переключения гиперссылок на модели https://chat.aiyiapi.com/#/m/gpt-4-all, https://chat.aiyiapi.com/#/m/gpt-4-gizmo-g-2fkFE8rbu
+- [X] Поддержка переключения гиперссылок на модели ChatGPT https://chat.openai.com/g/g-2fkFE8rbu на https://chat.aiyiapi.com/#/g/g-2fkFE8rbu
 - [X] Поддержка ChatGPT с несколькими модальностями GPTs
 - [X] Поддержка tts whisper
 - [X] Мгновенное распознавание речи (ASR браузера) `v2.15.7` и выше
-- [X] Поддержка изменения настроек гиперссылок, подходящих для деплоя `one-api`, `new-api` чата https://vercel.ddaiai.com/#/s/t?OPENAI_API_BASE_URL=https://abc.com&OPENAI_API_KEY=sk-xxxxx&MJ_SERVER=https://abc.com&MJ_API_SECRET=sk-xxx&UPLOADER_URL=
-- [X] Поддержка деплоя `one-api`, `new-api` чата https://vercel.ddaiai.com/#/?settings={%22key%22:%22sk-abc%22,%22url%22:%22https://www.abc.com%22} `(v.2.14.3)`
+- [X] Поддержка изменения настроек гиперссылок, подходящих для деплоя `one-api`, `new-api` чата https://chat.aiyiapi.com/#/s/t?OPENAI_API_BASE_URL=https://abc.com&OPENAI_API_KEY=sk-xxxxx&MJ_SERVER=https://abc.com&MJ_API_SECRET=sk-xxx&UPLOADER_URL=
+- [X] Поддержка деплоя `one-api`, `new-api` чата https://chat.aiyiapi.com/#/?settings={%22key%22:%22sk-abc%22,%22url%22:%22https://www.abc.com%22} `(v.2.14.3)`
 
 ## Установка на рабочем столе без сервера
-> - [x] Перейдите по ссылке https://github.com/Dooy/chatgpt-web-midjourney-proxy/releases и скачайте последнюю версию (выберите версию, подходящую для вашей операционной системы)
+> - [x] Перейдите по ссылке https://github.com/midjourneyapi/mjopen/releases и скачайте последнюю версию (выберите версию, подходящую для вашей операционной системы)
 > - [x] Выберите подходящего провайдера прокси-сервера (лучше всего, чтобы он поддерживал `gpt`, `gpts`, `midjourney`, `claude`, `suno`)
 > - [x] Рекомендуемый провайдер прокси-сервера https://www.openai-hk.com, один `key` и `api интерфейс`, поддерживающий одновременно `gpt`, `midjourney`, `claude`, `suno`, mj-fast от 0.12rmb/изображение
 ![многомодальность](./docs/suno-ds.jpg)
 
 ## Однократное развертывание Vercel
 
-[![Развернуть с Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Dooy/chatgpt-web-midjourney-proxy&env=OPENAI_API_BASE_URL&env=OPENAI_API_KEY&env=MJ_SERVER&env=MJ_API_SECRET&project-name=chatgpt-web-midjourney-proxy&repository-name=chatgpt-web-midjourney-proxy)
+[![Развернуть с Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/midjourneyapi/mjopen&env=OPENAI_API_BASE_URL&env=OPENAI_API_KEY&env=MJ_SERVER&env=MJ_API_SECRET&project-name=chatgpt-web-midjourney-proxy&repository-name=chatgpt-web-midjourney-proxy)
 
 ## Переменные окружения
 

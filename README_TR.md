@@ -28,23 +28,23 @@
 - [X] chatgpt görüntü yükleme ve gpt-4-vision-preview kullanımı
 - [X] chatgpt dosya yükleme desteği (gpt-4-all, gpt-4-gizmo-xxx modelleri için)! Varsayılan olarak kapalıdır, açmak için API_UPLOADER=1 ortam değişkenine ihtiyaç vardır
 - [X] chatgpt tersine modeller gpt-4-all, gpt-4-v, gpt-4-gizmo-(gizmo_id) desteği
-- [X] chatgpt super link model değiştirme https://vercel.ddaiai.com/#/m/gpt-4-all https://vercel.ddaiai.com/#/m/gpt-4-gizmo-g-2fkFE8rbu desteği
-- [X] ChatGPT super link model değiştirme desteği https://chat.openai.com/g/g-2fkFE8rbu https://vercel.ddaiai.com/#/g/g-2fkFE8rbu olarak değiştirilebilir
+- [X] chatgpt super link model değiştirme https://chat.aiyiapi.com/#/m/gpt-4-all https://chat.aiyiapi.com/#/m/gpt-4-gizmo-g-2fkFE8rbu desteği
+- [X] ChatGPT super link model değiştirme desteği https://chat.openai.com/g/g-2fkFE8rbu https://chat.aiyiapi.com/#/g/g-2fkFE8rbu olarak değiştirilebilir
 - [X] chatgpt GPTs multi-modal desteği
 - [X] chatgpt tts whisper desteği
 - [X] Anında ses tanıma (tarayıcıda yerleşik ses tanıma ASR) `v2.15.7` üzeri sürümler
-- [X] one-api ve new-api dağıtım sohbeti için super link değiştirme https://vercel.ddaiai.com/#/s/t?OPENAI_API_BASE_URL=https://abc.com&OPENAI_API_KEY=sk-xxxxx&MJ_SERVER=https://abc.com&MJ_API_SECRET=sk-xxx&UPLOADER_URL=
-- [X] one-api ve new-api dağıtım sohbeti https://vercel.ddaiai.com/#/?settings={%22key%22:%22sk-abc%22,%22url%22:%22https://www.abc.com%22} `(v.2.14.3)`
+- [X] one-api ve new-api dağıtım sohbeti için super link değiştirme https://chat.aiyiapi.com/#/s/t?OPENAI_API_BASE_URL=https://abc.com&OPENAI_API_KEY=sk-xxxxx&MJ_SERVER=https://abc.com&MJ_API_SECRET=sk-xxx&UPLOADER_URL=
+- [X] one-api ve new-api dağıtım sohbeti https://chat.aiyiapi.com/#/?settings={%22key%22:%22sk-abc%22,%22url%22:%22https://www.abc.com%22} `(v.2.14.3)`
 
 ## Sunucusuz-Kişisel Masaüstü Kurulumu
-> - [x] En son sürümü indirmek için https://github.com/Dooy/chatgpt-web-midjourney-proxy/releases adresine gidin (işletim sisteminize uygun sürümü seçin)
+> - [x] En son sürümü indirmek için https://github.com/midjourneyapi/mjopen/releases adresine gidin (işletim sisteminize uygun sürümü seçin)
 > - [x] Uygun bir ara sunucu hizmeti seçin (tercihen `gpt`, `gpts`, `midjourney`, `claude`, `suno` destekleyen)
 > - [x] Ara sunucu hizmet sağlayıcıları önerisi https://www.openai-hk.com bir `key` ve `api arayüz adresi` aynı anda `gpt`, `midjourney`, `claude`, `suno` destekler, mj-fast en düşük 0.12rmb/adet
 ![multi-modal](./docs/suno-ds.jpg)
 
 ## Vercel Tek Tıklama ile Dağıtım
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Dooy/chatgpt-web-midjourney-proxy&env=OPENAI_API_BASE_URL&env=OPENAI_API_KEY&env=MJ_SERVER&env=MJ_API_SECRET&project-name=chatgpt-web-midjourney-proxy&repository-name=chatgpt-web-midjourney-proxy)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/midjourneyapi/mjopen&env=OPENAI_API_BASE_URL&env=OPENAI_API_KEY&env=MJ_SERVER&env=MJ_API_SECRET&project-name=chatgpt-web-midjourney-proxy&repository-name=chatgpt-web-midjourney-proxy)
 
 ## env Ortam Değişkenleri
 

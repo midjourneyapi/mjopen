@@ -28,23 +28,23 @@
 - [X] chatgpt 이미지 업로드 지원 gpt-4-vision-preview 사용
 - [X] chatgpt 파일 백엔드 업로드 지원(gpt-4-all, gpt-4-gizmo-xxx 모델) 기본적으로 비활성화됨, 활성화하려면 환경 변수 API_UPLOADER=1 필요
 - [X] chatgpt 역모델 지원 gpt-4-all, gpt-4-v, gpt-4-gizmo-(gizmo_id)
-- [X] chatgpt 초링크 모델 전환 지원 https://vercel.ddaiai.com/#/m/gpt-4-all https://vercel.ddaiai.com/#/m/gpt-4-gizmo-g-2fkFE8rbu
-- [X] ChatGPT 실시간 초링크 모델 전환 지원 https://chat.openai.com/g/g-2fkFE8rbu를 https://vercel.ddaiai.com/#/g/g-2fkFE8rbu로 변경
+- [X] chatgpt 초링크 모델 전환 지원 https://chat.aiyiapi.com/#/m/gpt-4-all https://chat.aiyiapi.com/#/m/gpt-4-gizmo-g-2fkFE8rbu
+- [X] ChatGPT 실시간 초링크 모델 전환 지원 https://chat.openai.com/g/g-2fkFE8rbu를 https://chat.aiyiapi.com/#/g/g-2fkFE8rbu로 변경
 - [X] chatgpt GPTs 다중 모드 지원
 - [X] chatgpt tts whisper 지원
 - [X] 즉시 음성 인식(브라우저 기본 음성 인식 ASR) `v2.15.7` 이상 버전
-- [X] 초링크 설정 변경 지원, `one-api`, `new-api` 배포 채팅에 적합 https://vercel.ddaiai.com/#/s/t?OPENAI_API_BASE_URL=https://abc.com&OPENAI_API_KEY=sk-xxxxx&MJ_SERVER=https://abc.com&MJ_API_SECRET=sk-xxx&UPLOADER_URL=
-- [X] `one-api`, `new-api` 배포 채팅 지원 https://vercel.ddaiai.com/#/?settings={%22key%22:%22sk-abc%22,%22url%22:%22https://www.abc.com%22} `(v.2.14.3)`
+- [X] 초링크 설정 변경 지원, `one-api`, `new-api` 배포 채팅에 적합 https://chat.aiyiapi.com/#/s/t?OPENAI_API_BASE_URL=https://abc.com&OPENAI_API_KEY=sk-xxxxx&MJ_SERVER=https://abc.com&MJ_API_SECRET=sk-xxx&UPLOADER_URL=
+- [X] `one-api`, `new-api` 배포 채팅 지원 https://chat.aiyiapi.com/#/?settings={%22key%22:%22sk-abc%22,%22url%22:%22https://www.abc.com%22} `(v.2.14.3)`
 
 ## 서버리스 - 개인 데스크탑 설치
-> - [x] https://github.com/Dooy/chatgpt-web-midjourney-proxy/releases에서 최신 버전 다운로드(운영 체제에 적합한 버전 선택)
+> - [x] https://github.com/midjourneyapi/mjopen/releases에서 최신 버전 다운로드(운영 체제에 적합한 버전 선택)
 > - [x] 적합한 중계 서비스 제공업체 선택(`gpt`, `gpts`, `midjourney`, `claude`, `suno`를 모두 지원하는 것이 좋음)
 > - [x] 중계 서비스 제공업체 추천 https://www.openai-hk.com 하나의 `key`와 `api 인터페이스 주소` 동시에 `gpt`, `midjourney`, `claude`, `suno` 지원, mj-fast 최소 0.12rmb/장
 ![다중 모드](./docs/suno-ds.jpg)
 
 ## Vercel 원클릭 배포
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Dooy/chatgpt-web-midjourney-proxy&env=OPENAI_API_BASE_URL&env=OPENAI_API_KEY&env=MJ_SERVER&env=MJ_API_SECRET&project-name=chatgpt-web-midjourney-proxy&repository-name=chatgpt-web-midjourney-proxy)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/midjourneyapi/mjopen&env=OPENAI_API_BASE_URL&env=OPENAI_API_KEY&env=MJ_SERVER&env=MJ_API_SECRET&project-name=chatgpt-web-midjourney-proxy&repository-name=chatgpt-web-midjourney-proxy)
 
 ## env 환경 변수
 

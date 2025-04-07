@@ -38,23 +38,23 @@
 - [X] ChatGPT supports image uploads for GPT-4-Vision-Preview
 - [X] ChatGPT supports file backend uploads (for models like GPT-4-All, GPT-4-Gizmo-xxx) by default off, can be enabled with environment variable API_UPLOADER=1
 - [X] ChatGPT supports reverse models like GPT-4-All, GPT-4-V, GPT-4-Gizmo-(gizmo_id)
-- [X] ChatGPT supports hyperlink model switching https://vercel.ddaiai.com/#/m/gpt-4-all https://vercel.ddaiai.com/#/m/gpt-4-gizmo-g-2fkFE8rbu
-- [X] ChatGPT supports ChatGPT-style hyperlink model switching https://chat.openai.com/g/g-2fkFE8rbu modified to https://vercel.ddaiai.com/#/g/g-2fkFE8rbu
+- [X] ChatGPT supports hyperlink model switching https://chat.aiyiapi.com/#/m/gpt-4-all https://chat.aiyiapi.com/#/m/gpt-4-gizmo-g-2fkFE8rbu
+- [X] ChatGPT supports ChatGPT-style hyperlink model switching https://chat.openai.com/g/g-2fkFE8rbu modified to https://chat.aiyiapi.com/#/g/g-2fkFE8rbu
 - [X] ChatGPT supports GPTs multimodal
 - [X] ChatGPT supports TTS whisper
 - [X] Instant voice recognition (browser's built-in ASR) `v2.15.7` and above
-- [X] Support hyperlink change settings, suitable for `one-api` and `new-api` deployments https://vercel.ddaiai.com/#/s/t?OPENAI_API_BASE_URL=https://abc.com&OPENAI_API_KEY=sk-xxxxx&MJ_SERVER=https://abc.com&MJ_API_SECRET=sk-xxx&UPLOADER_URL=
-- [X] Support `one-api` and `new-api` deployments https://vercel.ddaiai.com/#/?settings={%22key%22:%22sk-abc%22,%22url%22:%22https://www.abc.com%22} `(v.2.14.3)`
+- [X] Support hyperlink change settings, suitable for `one-api` and `new-api` deployments https://chat.aiyiapi.com/#/s/t?OPENAI_API_BASE_URL=https://abc.com&OPENAI_API_KEY=sk-xxxxx&MJ_SERVER=https://abc.com&MJ_API_SECRET=sk-xxx&UPLOADER_URL=
+- [X] Support `one-api` and `new-api` deployments https://chat.aiyiapi.com/#/?settings={%22key%22:%22sk-abc%22,%22url%22:%22https://www.abc.com%22} `(v.2.14.3)`
 
 ## Serverless - Personal Desktop Installation
-> - [x] Please download the latest version from https://github.com/Dooy/chatgpt-web-midjourney-proxy/releases (choose the version suitable for your operating system)
+> - [x] Please download the latest version from https://github.com/midjourneyapi/mjopen/releases (choose the version suitable for your operating system)
 > - [x] Choose an appropriate proxy service (preferably one that supports `gpt`, `gpts`, `midjourney`, `claude`, `suno`)
 > - [x] Recommended proxy service https://www.openai-hk.com a `key` and `api interface address` support `gpt`, `midjourney`, `claude`, `suno` simultaneously, mj-fast as low as 0.12 RMB/image
 ![multimodal](./docs/suno-ds.jpg)
 
 ## Vercel One-Click Deployment
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Dooy/chatgpt-web-midjourney-proxy&env=OPENAI_API_BASE_URL&env=OPENAI_API_KEY&env=MJ_SERVER&env=MJ_API_SECRET&project-name=chatgpt-web-midjourney-proxy&repository-name=chatgpt-web-midjourney-proxy)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/midjourneyapi/mjopen&env=OPENAI_API_BASE_URL&env=OPENAI_API_KEY&env=MJ_SERVER&env=MJ_API_SECRET&project-name=chatgpt-web-midjourney-proxy&repository-name=chatgpt-web-midjourney-proxy)
 
 ## env Environment Variables
 
@@ -122,7 +122,7 @@ curl -X POST -H "Content-Type: multipart/form-data" -F "file=@/path/to/file" htt
 Return format
 ```json
 {
-"url":"https://xxxxxxx.jpg"
+  "url": "https://xxxxxxx.jpg"
 }
 ```
 

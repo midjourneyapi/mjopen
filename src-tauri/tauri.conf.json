@@ -90,14 +90,14 @@
     "updater": {
       "active": true,
       "endpoints": [
-        "https://github.com/Dooy/chatgpt-web-midjourney-proxy/releases/latest/download/latest.json"
+        "https://github.com/midjourneyapi/mjopen/releases/latest/download/latest.json"
       ],
       "dialog": false,
       "windows": {
         "installMode": "passive"
       },
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDk4RjFEMDQ2ODE1ODVDMjQKUldRa1hGaUJSdER4bUdNQ2wyZjJIcE1IbDJWajRJVVZwQXA1c3BqL0gzaUZhc0pUeXg2ak5ZRjAK"
-   
+
     },
     "windows": [
       {
