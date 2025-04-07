@@ -249,18 +249,29 @@ export const subGPT = async (data: any, chat: Chat.Chat) => {
     }
   }
   else if (action == 'gpt.dall-e-3') { // 执行变化
-    // chat.model= 'dall-e-3';
-
     const d = await gptFetch('/v1/images/generations', data.data)
     try {
-      const rz: any = d.data[0]
-      chat.text = rz.revised_prompt ?? '图片已完成'
-      chat.opt = { imageUrl: rz.url }
-      chat.loading = false
-      homeStore.setMyData({ act: 'updateChat', actData: chat })
+      // 判断是否是即梦AI模型
+      if (data.data.model && data.data.model.startsWith('jimeng-')) {
+        // 即梦AI的处理逻辑
+        chat.text = '图片已完成'
+        // 处理多张图片
+        chat.opt = { 
+          imageUrl: d.data[0].url, // 第一张图片作为主图
+          images: d.data.map((item: any) => item.url) // 所有图片URL
+        }
+        chat.loading = false
+        homeStore.setMyData({ act: 'updateChat', actData: chat })
+      } else {
+        // 原有的 DALL-E 3 处理逻辑
+        const rz: any = d.data[0]
+        chat.text = rz.revised_prompt ?? '图片已完成'
+        chat.opt = { imageUrl: rz.url }
+        chat.loading = false
+        homeStore.setMyData({ act: 'updateChat', actData: chat })
+      }
     }
     catch (e) {
-      // chat.text='失败！'+"\n```json\n"+JSON.stringify(d, null, 2)+"\n```\n";
       chat.text = '失败！' + `\n\`\`\`json\n${d ? JSON.stringify(d, null, 2) : e}\n\`\`\`\n`
       chat.loading = false
       homeStore.setMyData({ act: 'updateChat', actData: chat })
@@ -274,6 +285,8 @@ export const isDallImageModel = (model: string | undefined) => {
   if (model.includes('flux'))
     return true
   if (model.includes('ideogram'))
+    return true
+  if (model.includes('jimeng'))
     return true
   return ['dall-e-2', 'dall-e-3', 'ideogram'].includes(model)
 }

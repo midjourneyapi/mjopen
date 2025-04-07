@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { localGet, mlog } from "@/api";
 import { ref } from "vue";
-import { NImage } from "naive-ui";
+import { NImage, NEllipsis } from "naive-ui";
 import { SvgIcon } from "@/components/common";
 
 const pp = defineProps<{ image: string }>();

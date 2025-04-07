@@ -148,7 +148,7 @@ export default {
     myGallery: '我的画廊',
     yourHead: '你的头像',
     your2Head: '明星图',
-    tipInfo: '说明：<li>1 图片都必须包含脸，否则出不来图</li> <li>2 “明星图”可以先用mj绘画制作出来</li> <li>3 “明星图”其实动漫图也行</li> <li>4 “你的头像”建议用一寸个人照</li>',
+    tipInfo: '说明：<li>1 图片都必须包含脸，否则出不来图</li> <li>2 "明星图"可以先用mj绘画制作出来</li> <li>3 "明星图"其实动漫图也行</li> <li>4 "你的头像"建议用一寸个人照</li>',
     placeInput: '请填写提示词！',
     more5sb: '最多上传5张图片',
     exSuccess: '导出成功... 请看下载栏',
@@ -266,7 +266,8 @@ export default {
 
     findVersion: '发现更新版本',
     yesLastVersion: '已是最新版本',
-    infoStar: '此项目开源于 <a  class="text-blue-600 dark:text-blue-500" href="https://github.com/midjourneyapi/mjopen?tab=readme-ov-file" target="_blank"> GitHub </a>，免费且基于 MIT 协议，没有任何形式的付费行为！ </p><p>如果你觉得此项目对你有帮助，请在 GitHub 帮我点个 Star，谢谢！',
+    infoStar: '此项目开源于 <a  class="text-blue-600 dark:text-blue-500" href="https://github.com/midjourneyapi/mjopen?tab=readme-ov-file" target="_blank"> GitHub </a>，免费且基于 MIT 协议，没有任何形式的付费行为！ </p><p>如果你觉得此项目对你有帮助，请在 GitHub 帮我点个 Star，谢谢！</p><p>本项目由 YI API 团队开发并提供技术支持。',
+    setKeyTip: '如果您没有密钥，推荐访问 <a class="text-blue-600 dark:text-blue-500" href="https://aiyiapi.com" target="_blank">aiyiapi.com</a> 获取',
     setBtSaveChat: '仅保存会话',
     setBtSaveSys: '保存至系统',
 
@@ -518,7 +519,7 @@ export default {
     download: '下载',
     extend: '延展',
 
-    lumainfo: '说明：<ul><li >1.relax版已下线，<b style="color:red">入口已经更换到pro无水印版</b></li><li>2.无水印版本需要通过“下载按钮”得到下载链接</li><li>3.pro得到的链接有时限；请及时保存mp4文件到本地</li><li>4.请在生成后的30分钟内；将mp4保存到本地，渠道号也可能被封或者下线</li> <li>5.当下载链接无效时会给出带水印的视频链接</li></ul>',
+    lumainfo: '说明：<ul><li >1.relax版已下线，<b style="color:red">入口已经更换到pro无水印版</b></li><li>2.无水印版本需要通过"下载按钮"得到下载链接</li><li>3.pro得到的链接有时限；请及时保存mp4文件到本地</li><li>4.请在生成后的30分钟内；将mp4保存到本地，渠道号也可能被封或者下线</li> <li>5.当下载链接无效时会给出带水印的视频链接</li></ul>',
     runwayabout: 'Runway 相关',
     runwayserver: 'Runway 接口地址',
     setOpenKeyPlaceholder2: 'Runway API 的key, 可不填',
