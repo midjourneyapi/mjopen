@@ -99,7 +99,6 @@ const isShow = computed(() => {
       <div>
         {{ $t("setting.balance") }}：{{ config?.remaining ?? '-' }}
       </div>
-      </p>
       <p v-if="!isChatGPTAPI">
         {{ $t("setting.reverseProxy") }}：{{ config?.reverseProxy ?? '-' }}
       </p>

@@ -11,8 +11,6 @@ COPY ./package.json /app
 
 COPY ./pnpm-lock.yaml /app
 
-#RUN git --version
-
 RUN pnpm install
 
 COPY . /app
